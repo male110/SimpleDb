@@ -1,4 +1,7 @@
 <p>
+&nbsp;&nbsp;&nbsp;&nbsp; 这个是我用Go写的第一个东东，可能还存在些BUG没有测试到。这里主要是提供一个参考。各位可以改写成自己的风格。<br />
+</p>
+<p>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在命令行下输入如下两条命令，进行安装</p>
 <div style="background-color: F8F8F8">
 <pre>
