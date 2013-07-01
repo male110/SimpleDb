@@ -13,7 +13,7 @@
     
 <p>
     Go语言的数据库操作，只能用Rows.Scan来一次性读取所有列。感觉很不习惯，我还是习惯按照列名来一列列的取数据。所以我自己封装了一个数据结构MyRows,MyRows实现了一个函数，<span
-        style="color: #000000;">GetValue(/span>name<span style="color: #c0c0c0;"> </span>
+        style="color: #000000;">GetValue(name<span style="color: #c0c0c0;"> </span>
     <span style="color: #000080;">string</span><span style="color: #000000;">,</span><span
         style="color: #c0c0c0;"> </span>value<span style="color: #c0c0c0;"> </span><span
             style="font-weight: 600; color: #000080;">interface</span><span style="color: #000000;">{})可以按列名来取数据。如下所示：</span></p>
@@ -27,7 +27,7 @@
 </pre>
     </div>
 <p>
-    &nbsp;&nbsp;&nbsp; 为了操作方但，还定义了其它的结构体，如MyDb，其Query函数可以直接返回&nbsp;MyRows。NewDb用来创建MyDb结构，其参数与sql.Open一至，怎么传取决于你所使用的驱动程序。</p>
+    &nbsp;&nbsp;&nbsp; 为了操作方便，还定义了其它的结构体，如MyDb，其Query函数可以直接返回&nbsp;MyRows。NewDb用来创建MyDb结构，其参数与sql.Open一至，怎么传取决于你所使用的驱动程序。</p>
 <div style="background-color: F8F8F8">
 <pre>
     db, err := SimpleDb.NewDb("mysql", "root:123@tcp(127.0.0.1:3306)/test?charset=utf8")
@@ -85,7 +85,8 @@ type Person struct {
 <p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 上面的说明已经很详细了，
-SimpleDb.TableName类型的字段，只用来在tag中定义结构体对应的表名，如果没有该字段，认为表名就是结构体名。PK:&quot;true&quot;表示是主键，Auto:&quot;true&quot;表示该字段是自动增长的列，name:&quot;id&quot;,来指字该字段对应的数据表中的列名，如不指定认为跟字段名相同。&quot;name&quot;、&quot;age&quot;，当只需要指定列名时，可以直接写在tag中。tag为&quot;-&quot;表示不对应数据表中的任何列。</p>
+SimpleDb.TableName类型的字段，只用来在tag中定义结构体对应的表名，如果没有该字段，认为表名就是结构体名相同。PK:&quot;true&quot;表示是主键，Auto:&quot;true&quot;表示该字段是自动增长的列，name:&quot;id&quot;,来指定该字段对应的数据表中的列名，如不指定认为跟字段名相同。当只需要指定列名时，可以直接写在tag中，如：<span
+        style="color: #000000;">&quot;name&quot;、&quot;age&quot;</span>。tag为&quot;-&quot;表示不对应数据表中的任何列。</p>
 
 <div style="background-color: F8F8F8">
 <pre>
