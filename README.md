@@ -95,7 +95,7 @@ db.Insert(p)
 //修改数据
 db.Update(p)
 //删除数据
-db.Delete(p2)
+db.Delete(p)
 </pre>
 </div>
 <p>
