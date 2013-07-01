@@ -70,3 +70,73 @@ func (this *MyDb) QueryDataRows(query string, args ...interface{}) ([]DataRow, e
 	}
 	return result, nil
 }
+
+/*将一个Struct结构体插入到数据库,如有自增自段，
+会把自增值赋给model中的对应字段，model必须是可修改的，即传地址如，&m*/
+func (this *MyDb) Insert(model interface{}) error {
+	strSql, param, tabinfo, err := generateInsertSql(model)
+	if err != nil {
+		return err
+	}
+	var result sql.Result
+	result, err = this.Exec(strSql, param...)
+	if err != nil {
+		return err
+	}
+	setAuto(result, tabinfo)
+	return nil
+}
+
+//根据主键更新数据记录,返回所影响的行数
+func (this *MyDb) Update(model interface{}) (int64, error) {
+	strSql, param, _, err := generateUpdateSql(model)
+	if err != nil {
+		return 0, err
+	}
+	var result sql.Result
+
+	result, err = this.Exec(strSql, param...)
+	if err != nil {
+		return 0, err
+	}
+	var afect int64
+	afect, err = result.RowsAffected()
+	if err != nil {
+		return 0, err
+	}
+	return afect, nil
+}
+
+//根据主键返回一条数据，并赋值到model中，model必须是可修改的，即传地址如，&m
+func (this *MyDb) Load(model interface{}) error {
+	strSql, param, tabinfo, err := generateLoadSql(model)
+	if err != nil {
+		return err
+	}
+	var row *MyRow
+	row, err = this.QueryRow(strSql, param...)
+	if err != nil {
+		return err
+	}
+	err = SetFieldValue(row, tabinfo)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
+//根据主键删除一条数据,返回所影响的行
+func (this *MyDb) Delete(model interface{}) (int64, error) {
+	strSql, param, _, err := generateDeleteSql(model)
+	if err != nil {
+		return 0, err
+	}
+	var result sql.Result
+	result, err = this.Exec(strSql, param...)
+	if err != nil {
+		return 0, err
+	}
+	var effect int64
+	effect, err = result.LastInsertId()
+	return effect, err
+}
