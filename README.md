@@ -1,8 +1,8 @@
 <p>
-&nbsp;&nbsp;&nbsp;&nbsp; Õâ¸öÊÇÎÒÓÃGoĞ´µÄµÚÒ»¸ö¶«¶«£¬¿ÉÄÜ»¹´æÔÚĞ©BUGÃ»ÓĞ²âÊÔµ½¡£ÕâÀïÖ÷ÒªÊÇÌá¹©Ò»¸ö²Î¿¼¡£¸÷Î»¿ÉÒÔ¸ÄĞ´³É×Ô¼ºµÄ·ç¸ñ¡£<br />
+&nbsp;&nbsp;&nbsp;&nbsp; è¿™ä¸ªæ˜¯æˆ‘ç”¨Goå†™çš„ç¬¬ä¸€ä¸ªä¸œä¸œï¼Œå¯èƒ½è¿˜å­˜åœ¨äº›BUGæ²¡æœ‰æµ‹è¯•åˆ°ã€‚è¿™é‡Œä¸»è¦æ˜¯æä¾›ä¸€ä¸ªå‚è€ƒã€‚å„ä½å¯ä»¥æ”¹å†™æˆè‡ªå·±çš„é£æ ¼ã€‚<br />
 </p>
 <p>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÔÚÃüÁîĞĞÏÂÊäÈëÈçÏÂÁ½ÌõÃüÁî£¬½øĞĞ°²×°</p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; åœ¨å‘½ä»¤è¡Œä¸‹è¾“å…¥å¦‚ä¸‹ä¸¤æ¡å‘½ä»¤ï¼Œè¿›è¡Œå®‰è£…</p>
 <div style="background-color: F8F8F8">
 <pre>
 		go get github.com/male110/SimpleDb
@@ -12,11 +12,11 @@
     </div>
     
 <p>
-    GoÓïÑÔµÄÊı¾İ¿â²Ù×÷£¬Ö»ÄÜÓÃRows.ScanÀ´Ò»´ÎĞÔ¶ÁÈ¡ËùÓĞÁĞ¡£¸Ğ¾õºÜ²»Ï°¹ß£¬ÎÒ»¹ÊÇÏ°¹ß°´ÕÕÁĞÃûÀ´Ò»ÁĞÁĞµÄÈ¡Êı¾İ¡£ËùÒÔÎÒ×Ô¼º·â×°ÁËÒ»¸öÊı¾İ½á¹¹MyRows,MyRowsÊµÏÖÁËÒ»¸öº¯Êı£¬<span
+    Goè¯­è¨€çš„æ•°æ®åº“æ“ä½œï¼Œåªèƒ½ç”¨Rows.Scanæ¥ä¸€æ¬¡æ€§è¯»å–æ‰€æœ‰åˆ—ã€‚æ„Ÿè§‰å¾ˆä¸ä¹ æƒ¯ï¼Œæˆ‘è¿˜æ˜¯ä¹ æƒ¯æŒ‰ç…§åˆ—åæ¥ä¸€åˆ—åˆ—çš„å–æ•°æ®ã€‚æ‰€ä»¥æˆ‘è‡ªå·±å°è£…äº†ä¸€ä¸ªæ•°æ®ç»“æ„MyRows,MyRowså®ç°äº†ä¸€ä¸ªå‡½æ•°ï¼Œ<span
         style="color: #000000;">GetValue(name<span style="color: #c0c0c0;"> </span>
     <span style="color: #000080;">string</span><span style="color: #000000;">,</span><span
         style="color: #c0c0c0;"> </span>value<span style="color: #c0c0c0;"> </span><span
-            style="font-weight: 600; color: #000080;">interface</span><span style="color: #000000;">{})¿ÉÒÔ°´ÁĞÃûÀ´È¡Êı¾İ¡£ÈçÏÂËùÊ¾£º</span></p>
+            style="font-weight: 600; color: #000080;">interface</span><span style="color: #000000;">{})å¯ä»¥æŒ‰åˆ—åæ¥å–æ•°æ®ã€‚å¦‚ä¸‹æ‰€ç¤ºï¼š</span></p>
 <div style="background-color: F8F8F8">
 <pre>
 		err = rows.GetValue("IsBoy", &isBoy)
@@ -27,32 +27,32 @@
 </pre>
     </div>
 <p>
-    &nbsp;&nbsp;&nbsp; ÎªÁË²Ù×÷·½±ã£¬»¹¶¨ÒåÁËÆäËüµÄ½á¹¹Ìå£¬ÈçMyDb£¬ÆäQueryº¯Êı¿ÉÒÔÖ±½Ó·µ»Ø&nbsp;MyRows¡£NewDbÓÃÀ´´´½¨MyDb½á¹¹£¬Æä²ÎÊıÓësql.OpenÒ»ÖÁ£¬ÔõÃ´´«È¡¾öÓÚÄãËùÊ¹ÓÃµÄÇı¶¯³ÌĞò¡£</p>
+    &nbsp;&nbsp;&nbsp; ä¸ºäº†æ“ä½œæ–¹ä¾¿ï¼Œè¿˜å®šä¹‰äº†å…¶å®ƒçš„ç»“æ„ä½“ï¼Œå¦‚MyDbï¼Œå…¶Queryå‡½æ•°å¯ä»¥ç›´æ¥è¿”å›&nbsp;MyRowsã€‚NewDbç”¨æ¥åˆ›å»ºMyDbç»“æ„ï¼Œå…¶å‚æ•°ä¸sql.Openä¸€è‡³ï¼Œæ€ä¹ˆä¼ å–å†³äºä½ æ‰€ä½¿ç”¨çš„é©±åŠ¨ç¨‹åºã€‚</p>
 <div style="background-color: F8F8F8">
 <pre>
     db, err := SimpleDb.NewDb("mysql", "root:123@tcp(127.0.0.1:3306)/test?charset=utf8")
 	if err != nil {
-		fmt.Println("´ò¿ªSQLÊ±³ö´í:", err.Error())
+		fmt.Println("æ‰“å¼€SQLæ—¶å‡ºé”™:", err.Error())
 		return
 	}
 	var rows *SimpleDb.MyRows
-	//´ÓÊı¾İ¿âÖĞÈ¡Êı¾İ
+	//ä»æ•°æ®åº“ä¸­å–æ•°æ®
 	rows, err = db.Query("select * from person")
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
-	//ÏÔÊ¾Êı¾İ
+	//æ˜¾ç¤ºæ•°æ®
 	for rows.Next() {
 		var id, age int
 		var name string
 		var isBoy bool
-		//°´×Ö¶ÎÃûÈ¡Êı¾İ,Ò²¿ÉÒÔÓÃrows.Scan(&id,&name,&age),À´È¡
+		//æŒ‰å­—æ®µåå–æ•°æ®,ä¹Ÿå¯ä»¥ç”¨rows.Scan(&id,&name,&age),æ¥å–
 		rows.GetValue("id", &id)
 		rows.GetValue("name", &name)
 
 		rows.GetValue("age", &age)
-		//¿ÉÒÔ¸ù¾İ·µ»ØÖµ£¬ÅĞ¶ÏÊÇ·ñ³É¹¦
+		//å¯ä»¥æ ¹æ®è¿”å›å€¼ï¼Œåˆ¤æ–­æ˜¯å¦æˆåŠŸ
 		err = rows.GetValue("IsBoy", &isBoy)
 		if err != nil {
 			fmt.Println(err)
@@ -64,43 +64,43 @@
     </div>
 <p>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    Í¬Ê±»¹Ê±ÏÖÁËÒ»¸ö¼òµ¥µÄORM£¬ÊµÏÖÁË×î»ù±¾µÄ²åÈëÊı¾İ£¬ĞŞ¸ÄÊı¾İ£¬É¾³ıÊı¾İ¡£ 
-    ÎÒÒ»°ãÊ¹ÓÃORMÖ»ÓÃÕâÃ´¼¸¸ö·½·¨£¬ÆäËüµÄ¶¼ÊÇĞ´SQLÓï¾ä¡£ÕâÀïÖ»ÊÇÒ»¸ö²Î¿¼£¬´ó¼Ò¿ÉÒÔ¸ù¾İ×Ô¼ºµÄĞèÒª£¬×Ô¼ºÏ°¹ß£¬½øĞĞĞŞ¸Ä¡£¸Ä³É×Ô¼ºĞèÒªµÄ¸ñÊ½¡£Êı¾İ½á¹¹µÄ¶¨Òå¸ñÊ½ÈçÏÂ£º</p>
+    åŒæ—¶è¿˜æ—¶ç°äº†ä¸€ä¸ªç®€å•çš„ORMï¼Œå®ç°äº†æœ€åŸºæœ¬çš„æ’å…¥æ•°æ®ï¼Œä¿®æ”¹æ•°æ®ï¼Œåˆ é™¤æ•°æ®ã€‚ 
+    æˆ‘ä¸€èˆ¬ä½¿ç”¨ORMåªç”¨è¿™ä¹ˆå‡ ä¸ªæ–¹æ³•ï¼Œå…¶å®ƒçš„éƒ½æ˜¯å†™SQLè¯­å¥ã€‚è¿™é‡Œåªæ˜¯ä¸€ä¸ªå‚è€ƒï¼Œå¤§å®¶å¯ä»¥æ ¹æ®è‡ªå·±çš„éœ€è¦ï¼Œè‡ªå·±ä¹ æƒ¯ï¼Œè¿›è¡Œä¿®æ”¹ã€‚æ”¹æˆè‡ªå·±éœ€è¦çš„æ ¼å¼ã€‚æ•°æ®ç»“æ„çš„å®šä¹‰æ ¼å¼å¦‚ä¸‹ï¼š</p>
 <div style="background-color: F8F8F8">
 <pre>
 type Person struct {
-	/*TableNameÀàĞÍÖ»ÊÇÓÃÀ´ÉèÖÃ±íÃû¡£Èç¹û½á¹¹ÌåÃû¸ú±íÃûÏàÍ¬¿ÉÒÔÊ¡ÂÔ*/
+	/*TableNameç±»å‹åªæ˜¯ç”¨æ¥è®¾ç½®è¡¨åã€‚å¦‚æœç»“æ„ä½“åè·Ÿè¡¨åç›¸åŒå¯ä»¥çœç•¥*/
 	TableName SimpleDb.TableName "person"
 
-	/*nameÊÇ±íÃû,PKÓÃÀ´ÉèÖÃÊÇ·ñÖ÷¼ü£¬trueÖ÷¼ü£¬false·ÇÖ÷¼ü*/
+	/*nameæ˜¯è¡¨å,PKç”¨æ¥è®¾ç½®æ˜¯å¦ä¸»é”®ï¼Œtrueä¸»é”®ï¼Œfalseéä¸»é”®*/
 	Id int `name:"id"PK:"true"Auto:"true"`
 
-	Name   string "name" //tagÀïµÄname±íÊÇ¶ÔÓ¦µÄ×Ö¶ÎÃû
-	Age    int    "age"  //tagÀïµÄage±íÊÇ¶ÔÓ¦µÄ×Ö¶ÎÃû
+	Name   string "name" //tagé‡Œçš„nameè¡¨æ˜¯å¯¹åº”çš„å­—æ®µå
+	Age    int    "age"  //tagé‡Œçš„ageè¡¨æ˜¯å¯¹åº”çš„å­—æ®µå
 	IsBoy  bool
-	NotUse string "-" //-²»»á±£´æµ½Êı¾İ¿âÖĞ
+	NotUse string "-" //-ä¸ä¼šä¿å­˜åˆ°æ•°æ®åº“ä¸­
 }
 </pre>
 </div>
 <p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-ÉÏÃæµÄËµÃ÷ÒÑ¾­ºÜÏêÏ¸ÁË£¬
-SimpleDb.TableNameÀàĞÍµÄ×Ö¶Î£¬Ö»ÓÃÀ´ÔÚtagÖĞ¶¨Òå½á¹¹Ìå¶ÔÓ¦µÄ±íÃû£¬Èç¹ûÃ»ÓĞ¸Ã×Ö¶Î£¬ÈÏÎª±íÃû¾ÍÊÇ½á¹¹ÌåÃûÏàÍ¬¡£PK:&quot;true&quot;±íÊ¾ÊÇÖ÷¼ü£¬Auto:&quot;true&quot;±íÊ¾¸Ã×Ö¶ÎÊÇ×Ô¶¯Ôö³¤µÄÁĞ£¬name:&quot;id&quot;,À´Ö¸¶¨¸Ã×Ö¶Î¶ÔÓ¦µÄÊı¾İ±íÖĞµÄÁĞÃû£¬Èç²»Ö¸¶¨ÈÏÎª¸ú×Ö¶ÎÃûÏàÍ¬¡£µ±Ö»ĞèÒªÖ¸¶¨ÁĞÃûÊ±£¬¿ÉÒÔÖ±½ÓĞ´ÔÚtagÖĞ£¬Èç£º<span
-        style="color: #000000;">&quot;name&quot;¡¢&quot;age&quot;</span>¡£tagÎª&quot;-&quot;±íÊ¾²»¶ÔÓ¦Êı¾İ±íÖĞµÄÈÎºÎÁĞ¡£</p>
+ä¸Šé¢çš„è¯´æ˜å·²ç»å¾ˆè¯¦ç»†äº†ï¼Œ
+SimpleDb.TableNameç±»å‹çš„å­—æ®µï¼Œåªç”¨æ¥åœ¨tagä¸­å®šä¹‰ç»“æ„ä½“å¯¹åº”çš„è¡¨åï¼Œå¦‚æœæ²¡æœ‰è¯¥å­—æ®µï¼Œè®¤ä¸ºè¡¨åå°±æ˜¯ç»“æ„ä½“åç›¸åŒã€‚PK:&quot;true&quot;è¡¨ç¤ºæ˜¯ä¸»é”®ï¼ŒAuto:&quot;true&quot;è¡¨ç¤ºè¯¥å­—æ®µæ˜¯è‡ªåŠ¨å¢é•¿çš„åˆ—ï¼Œname:&quot;id&quot;,æ¥æŒ‡å®šè¯¥å­—æ®µå¯¹åº”çš„æ•°æ®è¡¨ä¸­çš„åˆ—åï¼Œå¦‚ä¸æŒ‡å®šè®¤ä¸ºè·Ÿå­—æ®µåç›¸åŒã€‚å½“åªéœ€è¦æŒ‡å®šåˆ—åæ—¶ï¼Œå¯ä»¥ç›´æ¥å†™åœ¨tagä¸­ï¼Œå¦‚ï¼š<span
+        style="color: #000000;">&quot;name&quot;ã€&quot;age&quot;</span>ã€‚tagä¸º&quot;-&quot;è¡¨ç¤ºä¸å¯¹åº”æ•°æ®è¡¨ä¸­çš„ä»»ä½•åˆ—ã€‚</p>
 
 <div style="background-color: F8F8F8">
 <pre>
-// ²åÈëÊı¾İ
-p := &Person{Name: "ÕÅÈı·á", Age: 500, IsBoy: true}
+// æ’å…¥æ•°æ®
+p := &Person{Name: "å¼ ä¸‰ä¸°", Age: 500, IsBoy: true}
 db.Insert(p)
-//ĞŞ¸ÄÊı¾İ
+//ä¿®æ”¹æ•°æ®
 db.Update(p)
-//É¾³ıÊı¾İ
+//åˆ é™¤æ•°æ®
 db.Delete(p)
 </pre>
 </div>
 <p>
-   ÏÂÃæÀ´¿´Ò»¸öÍêÕûµÄÀı×Ó£¬Ê×ÏÈËû´´±í:</p>
+   ä¸‹é¢æ¥çœ‹ä¸€ä¸ªå®Œæ•´çš„ä¾‹å­ï¼Œé¦–å…ˆä»–åˆ›è¡¨:</p>
 <div style="background-color: F8F8F8">
 <pre>
 CREATE TABLE `person` (
@@ -112,121 +112,123 @@ CREATE TABLE `person` (
 )
 COLLATE='utf8_general_ci';
 
-insert into `person` (name,age,IsBoy) values('ÕÅÈı',20,0);
-insert into `person` (name,age,IsBoy) values('ÍõÎå',19,1);
+insert into `person` (name,age,IsBoy) values('å¼ ä¸‰',20,0);
+insert into `person` (name,age,IsBoy) values('ç‹äº”',19,1);
 </pre>
 </div>
 </span>
 <p>
-    ÏÂÃæÊÇÍêÕûµÄ´úÂë</p>
+    ä¸‹é¢æ˜¯å®Œæ•´çš„ä»£ç </p>
 <div style="background-color: F8F8F8">
 <pre>
-package main
+  // mydb project main.go
+  package main
 
-import (
-	"fmt"
-	_ "github.com/go-sql-driver/mysql"
-	"github.com/male110/SimpleDb"
-)
+  import (
+  "fmt"
+  _ "github.com/go-sql-driver/mysql"
+  "github.com/male110/SimpleDb"
+  )
 
-type Person struct {
-	/*TableNameÀàĞÍÖ»ÊÇÓÃÀ´ÉèÖÃ±íÃû¡£Èç¹û½á¹¹ÌåÃû¸ú±íÃûÏàÍ¬¿ÉÒÔÊ¡ÂÔ*/
-	TableName SimpleDb.TableName "person"
+  type Person struct {
+  /*TableNameç±»å‹åªæ˜¯ç”¨æ¥è®¾ç½®è¡¨åã€‚å¦‚æœç»“æ„ä½“åè·Ÿè¡¨åç›¸åŒå¯ä»¥çœç•¥*/
+  TableName SimpleDb.TableName "person"
 
-	/*nameÊÇ±íÃû,PKÓÃÀ´ÉèÖÃÊÇ·ñÖ÷¼ü£¬trueÖ÷¼ü£¬false·ÇÖ÷¼ü*/
-	Id int `name:"id"PK:"true"Auto:"true"`
+  /*nameæ˜¯è¡¨å,PKç”¨æ¥è®¾ç½®æ˜¯å¦ä¸»é”®ï¼Œtrueä¸»é”®ï¼Œfalseéä¸»é”®*/
+  Id int `name:"id"PK:"true"Auto:"true"`
 
-	Name   string "name" //tagÀïµÄname±íÊÇ¶ÔÓ¦µÄ×Ö¶ÎÃû
-	Age    int    "age"  //tagÀïµÄage±íÊÇ¶ÔÓ¦µÄ×Ö¶ÎÃû
-	IsBoy  bool
-	NotUse string "-" //-²»»á±£´æµ½Êı¾İ¿âÖĞ
-}
+  Name   string "name" //tagé‡Œçš„nameè¡¨æ˜¯å¯¹åº”çš„å­—æ®µå
+  Age    int    "age"  //tagé‡Œçš„ageè¡¨æ˜¯å¯¹åº”çš„å­—æ®µå
+  IsBoy  bool
+  NotUse string "-" //-ä¸ä¼šä¿å­˜åˆ°æ•°æ®åº“ä¸­
+  }
 
-func main() {
-	db, err := SimpleDb.NewDb("mysql", "root:123@tcp(127.0.0.1:3306)/test?charset=utf8")
-	if err != nil {
-		fmt.Println("´ò¿ªSQLÊ±³ö´í:", err.Error())
-		return
-	}
-	defer db.Close()
-	p := &Person{Name: "ÕÅÈı·á", Age: 500, IsBoy: true}
-	//²åÈëÒ»ÌõÊı¾İ
-	err = db.Insert(p)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-	fmt.Println("ĞÂ²åÈëÊı¾İµÄID:", p.Id)
-	var rows *SimpleDb.MyRows
-	//´ÓÊı¾İ¿âÖĞÈ¡Êı¾İ
-	rows, err = db.Query("select * from person")
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-	//ÏÔÊ¾Êı¾İ
-	for rows.Next() {
-		var id, age int
-		var name string
-		var isBoy bool
-		//°´×Ö¶ÎÃûÈ¡Êı¾İ,Ò²¿ÉÒÔÓÃrows.Scan(&id,&name,&age),À´È¡
-		rows.GetValue("id", &id)
-		rows.GetValue("name", &name)
+  func main() {
+  db, err := SimpleDb.NewDb("mysql", "root:123@tcp(127.0.0.1:3306)/test?charset=utf8")
+  if err != nil {
+  fmt.Println("æ‰“å¼€SQLæ—¶å‡ºé”™:", err.Error())
+  return
+  }
+  defer db.Close()
+  p := &Person{Name: "å¼ ä¸‰ä¸°", Age: 500, IsBoy: true}
+  //æ’å…¥ä¸€æ¡æ•°æ®
+  err = db.Insert(p)
+  if err != nil {
+  fmt.Println(err)
+  return
+  }
+  fmt.Println("æ–°æ’å…¥æ•°æ®çš„ID:", p.Id)
+  var rows *SimpleDb.MyRows
+  //ä»æ•°æ®åº“ä¸­å–æ•°æ®
+  rows, err = db.Query("select * from person")
+  if err != nil {
+  fmt.Println(err)
+  return
+  }
+  //æ˜¾ç¤ºæ•°æ®
+  for rows.Next() {
+  var id, age int
+  var name string
+  var isBoy bool
+  //æŒ‰å­—æ®µåå–æ•°æ®,ä¹Ÿå¯ä»¥ç”¨rows.Scan(&id,&name,&age),æ¥å–
+  rows.GetValue("id", &id)
+  rows.GetValue("name", &name)
 
-		rows.GetValue("age", &age)
-		//¿ÉÒÔ¸ù¾İ·µ»ØÖµ£¬ÅĞ¶ÏÊÇ·ñ³É¹¦
-		err = rows.GetValue("IsBoy", &isBoy)
-		if err != nil {
-			fmt.Println(err)
-			return
-		}
-		fmt.Println(id, "\t", name, "\t", age, "\t", isBoy)
-	}
-	//Êä³ö·Ö¸îÏß
-	fmt.Println("==========¸î¸î¸î¸î¸î¸î¸î¸î============")
-	p.Name = "Åí×æ"
-	p.Age = 800
-	//ĞŞ¸ÄÊı¾İ
-	_, err = db.Update(p)
-	if err != nil {
-		fmt.Println(err, "xxxx")
-		return
-	}
-	//QueryDataRows·µ»ØÒ»¸öDataRowÊı×é£¬DataRowÖĞÓĞÒ»mapÀ´´æ·ÅĞĞÖĞµÄÊı¾İ
-	var arrRow []SimpleDb.DataRow
-	arrRow, err = db.QueryDataRows("select * from person")
-	if err != nil {
-		fmt.Println(err, "zzzzz")
-		return
-	}
-	for _, row := range arrRow {
-		var id, age int
-		var name string
-		var isBoy bool
-		//Ö»ÄÜ°´×Ö¶ÎÃûÈ¡Êı¾İ
-		row.GetValue("id", &id)
-		row.GetValue("name", &name)
-		row.GetValue("age", &age)
-		//¿ÉÒÔ¸ù¾İ·µ»ØÖµ£¬ÅĞ¶ÏÊÇ·ñ³É¹¦
-		err = rows.GetValue("IsBoy", &isBoy)
-		if err != nil {
-			fmt.Println(err)
-			return
-		}
-		fmt.Println(id, "\t", name, "\t", age, isBoy)
-	}
-	var p2 Person
-	p2.Id = p.Id
-	//¸ù¾İÖ÷¼ü´ÓÊı¾İ¿âÖĞÈ¡µ¥ÌõÊı¾İ
-	err = db.Load(&p2)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-	fmt.Println(p2)
-	//¸ù¾İÖ÷¼üÉ¾³ıÒ»ÌõÊı¾İ
-	db.Delete(p2)
-}
+  rows.GetValue("age", &age)
+  //å¯ä»¥æ ¹æ®è¿”å›å€¼ï¼Œåˆ¤æ–­æ˜¯å¦æˆåŠŸ
+  err = rows.GetValue("IsBoy", &isBoy)
+  if err != nil {
+  fmt.Println(err)
+  return
+  }
+  fmt.Println(id, "\t", name, "\t", age, "\t", isBoy)
+  }
+  rows.Close()
+  //è¾“å‡ºåˆ†å‰²çº¿
+  fmt.Println("==========å‰²å‰²å‰²å‰²å‰²å‰²å‰²å‰²============")
+  p.Name = "å½­ç¥–"
+  p.Age = 800
+  //ä¿®æ”¹æ•°æ®
+  _, err = db.Update(p)
+  if err != nil {
+  fmt.Println(err, "xxxx")
+  return
+  }
+  //QueryDataRowsè¿”å›ä¸€ä¸ªDataRowæ•°ç»„ï¼ŒDataRowä¸­æœ‰ä¸€mapæ¥å­˜æ”¾è¡Œä¸­çš„æ•°æ®
+  var arrRow []SimpleDb.DataRow
+  arrRow, err = db.QueryDataRows("select * from person")
+  if err != nil {
+  fmt.Println(err, "zzzzz")
+  return
+  }
+  for _, row := range arrRow {
+  var id, age int
+  var name string
+  var isBoy bool
+  //åªèƒ½æŒ‰å­—æ®µåå–æ•°æ®
+  row.GetValue("id", &id)
+  row.GetValue("name", &name)
+  row.GetValue("age", &age)
+  //å¯ä»¥æ ¹æ®è¿”å›å€¼ï¼Œåˆ¤æ–­æ˜¯å¦æˆåŠŸ
+  err = rows.GetValue("IsBoy", &isBoy)
+  if err != nil {
+  fmt.Println(err)
+  return
+  }
+  fmt.Println(id, "\t", name, "\t", age, isBoy)
+  }
+  var p2 Person
+  p2.Id = p.Id
+  //æ ¹æ®ä¸»é”®ä»æ•°æ®åº“ä¸­å–å•æ¡æ•°æ®
+  err = db.Load(&p2)
+  if err != nil {
+  fmt.Println(err)
+  return
+  }
+  fmt.Println(p2)
+  //æ ¹æ®ä¸»é”®åˆ é™¤ä¸€æ¡æ•°æ®
+  db.Delete(p2)
+  }
 </pre>
 </div>
 
