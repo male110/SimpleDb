@@ -6,8 +6,6 @@
 <div style="background-color: F8F8F8">
 <pre>
 		go get github.com/male110/SimpleDb
-		go install github.com/male110/SimpleDb
-
 </pre>
     </div>
     
