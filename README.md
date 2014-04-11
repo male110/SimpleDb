@@ -101,17 +101,18 @@ db.Delete(p)
    下面来看一个完整的例子，首先他创表:</p>
 <div style="background-color: F8F8F8">
 <pre>
-CREATE TABLE `person` (
-	`id` INT(50) NOT NULL AUTO_INCREMENT,
-	`name` VARCHAR(50) NULL DEFAULT NULL,
-	`age` INT(50) NULL DEFAULT NULL,
-	`IsBoy` SMALLINT(10) NULL,
-	PRIMARY KEY (`id`)
-)
-COLLATE='utf8_general_ci';
+  CREATE TABLE `person` (
+  `id` INT(50) NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(50) NULL DEFAULT NULL,
+  `age` INT(50) NULL DEFAULT NULL,
+  `IsBoy` SMALLINT(10) NULL,
+  `AddDate` DATETIME NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+  )
+  COLLATE='utf8_general_ci';
 
-insert into `person` (name,age,IsBoy) values('张三',20,0);
-insert into `person` (name,age,IsBoy) values('王五',19,1);
+  insert into `person` (name,age,IsBoy,AddDate) values('张三',20,0,now());
+  insert into `person` (name,age,IsBoy,AddDate) values('王五',19,1,now());
 </pre>
 </div>
 </span>
