@@ -373,6 +373,14 @@ func SetFieldValue(row IGetData, tabinfo *TableInfo) (err error) {
 	return
 }
 
+func RowToModel(row IGetData, m interface{}) error {
+	tableinfo, err := getTableInfo(m)
+	if err != nil {
+		return nil
+	}
+	return SetFieldValue(row, tableinfo)
+}
+
 //设置model的值
 func SetValue(row IGetData, model interface{}) (err error) {
 	defer func() {

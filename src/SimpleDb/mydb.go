@@ -118,6 +118,9 @@ func (this *MyDb) Load(model interface{}) error {
 	if err != nil {
 		return err
 	}
+	if row.IsHasRows == false {
+		return ErrNoRows
+	}
 	err = SetFieldValue(row, tabinfo)
 	if err != nil {
 		return err
